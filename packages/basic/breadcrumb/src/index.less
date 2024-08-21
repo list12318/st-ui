@@ -1,0 +1,36 @@
+.stms-breadcrumb {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid rgb(220, 220, 220);
+
+  .breadcrumbContainer {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+
+    > span {
+      float: left;
+      font-size: 18px;
+      color: #adadaf;
+      margin-right: 8px;
+      position: relative;
+      top: -2px;
+    }
+
+    > .breadcrumbBody {
+      float: left;
+
+      .el-breadcrumb__inner {
+        color: #2c3e50 !important;
+        font-family: Source Han Sans CN;
+      }
+
+      .el-breadcrumb__inner a,
+      .el-breadcrumb__inner.is-link {
+        font-weight: 100 !important;
+      }
+    }
+  }
+}

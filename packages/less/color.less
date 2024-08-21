@@ -1,0 +1,19 @@
+@types: primary, success, warning, danger, info;
+@colors: #409eff, #67c23a, #e6a23c, #f56c6c, #909399;
+
+.color(@type, @color) {
+  .stms-style__color-@{type} {
+    color: @color !important;
+  }
+  .stms-style__border-color-@{type} {
+    border-color: @color !important;
+  }
+  .stms-style__background-color-@{type} {
+    background-color: @color !important;
+  }
+}
+.loop(@i) when (@i < length(@types)+1) {
+  .color(extract(@types, @i), extract(@colors, @i));
+  .loop(@i+1);
+}
+.loop(1);

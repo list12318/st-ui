@@ -1,0 +1,21 @@
+.stms-scrollbar.el-scrollbar {
+  height: 100% !important;
+
+  >.el-scrollbar__wrap {
+    overflow-x: hidden !important;
+  }
+
+  >.el-scrollbar__bar.is-horizontal {
+    display: none !important;
+  }
+}
+
+.stms-scrollbar.el-scrollbar.scrollX {
+  >.el-scrollbar__wrap {
+    overflow-x: auto !important;
+  }
+
+  >.el-scrollbar__bar.is-horizontal {
+    display: block !important;
+  }
+}

@@ -1,0 +1,39 @@
+.stms-framework-head-menu {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  .menu-item {
+    height: 100%;
+    cursor: pointer;
+  }
+  .menu-item a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    outline: none;
+  }
+  .menu-item a span {
+    white-space: nowrap;
+    color: #e1e1e4;
+  }
+  .menu-item a .navIcon {
+    display: inline-block;
+    // width: 18px;
+    // height: 18px;
+    margin-right: 18px;
+    color: #fff;
+    font-size: 18px;
+  }
+  .menu-item > a.router-link-active {
+    background: #3347c9;
+    border-color: #37cfc9;
+  }
+  .menu-item > a.router-link-active span {
+    color: #ffffff;
+  }
+}

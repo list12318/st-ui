@@ -1,0 +1,217 @@
+.bp-management-navigator {
+  width: 100%;
+  height: 60px;
+  z-index: 2;
+  background: rgba(90, 108, 230, 1);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    min-width: 240px;
+    height: 100%;
+    overflow: hidden;
+    font: 400 18px "CenturyGothic";
+    color: #fff;
+    padding: 0 20px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 22px;
+      margin-right: 20px;
+    }
+  }
+  .menu {
+    width: 0;
+    flex: auto;
+    height: 100%;
+  }
+  .sub_menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    .el-dropdown {
+      p {
+        width: 80px;
+        height: 26px;
+        text-align: center;
+        line-height: 26px;
+        color: #ffffff;
+        background: linear-gradient(to right, #0b99fb, #44d5fc);
+      }
+    }
+  }
+  .switch {
+    font-size: 20px;
+    margin: 0 18px;
+  }
+  .loginBox {
+    height: 100%;
+    color: #000;
+    width: 300px;
+
+    .tool {
+      height: 100%;
+      width: 100%;
+      vertical-align: top;
+      position: relative;
+      font-size: 12px;
+      display: flex;
+      justify-content: flex-end;
+    
+      .user {
+        width: 50%;
+        height: 100%;
+        float: left;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        .userIcon {
+          padding: 0 12px 0 6px;
+          i {
+            font-size: 18px;
+            color: #fff;
+          }
+        }
+        .userDropdown {
+          .el-dropdown {
+            height: 100%;
+            .el-dropdown-link {
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              color: #fff;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              i {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+      .username {
+        height: 100%;
+        float: right;
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin-left: -5px;
+        cursor: default;
+        color: #e5eaf0;
+      }
+
+      .tool-nine {
+        width: 230px;
+        height: 70px;
+        float: left;
+        color: #ffffff;
+
+        ul {
+          li {
+            float: left;
+            margin-right: 12px;
+            cursor: pointer;
+
+            .mouseStyle {
+              font-size: 24px;
+            }
+
+            .el-badge__content.is-fixed {
+              top: 23px;
+            }
+          }
+        }
+      }
+    }
+
+    div.off {
+      float: right;
+      height: 100%;
+      width: 60px;
+      color: #e5eaf0;
+      cursor: pointer;
+
+      span:first-of-type {
+        margin-right: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.navWarp {
+  width: 100%;
+  height: calc(100% - 70px);
+  background: rgb(223, 235, 252);
+  .img {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.sub-service-dropdown-menu {
+  height: 220px;
+  .box {
+    width: 100%;
+    height: calc(100% - 60px);
+    display: flex;
+    justify-content: space-around;
+    li {
+      width: 120px;
+      height: 100%;
+      flex: 1;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      .img {
+        width: 90px;
+        height: 90px;
+        background: #f3f5fd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 50px;
+        }
+      }
+      p {
+        color: #333333;
+        font-weight: 500;
+      }
+    }
+    li:hover {
+      .img {
+        border: 1px solid #3a84ff;
+      }
+
+      p {
+        color: #3a84ff;
+        text-decoration: underline;
+      }
+    }
+    li.active {
+      .img {
+        border: 1px solid #3a84ff;
+      }
+      p {
+        color: #3a84ff;
+        text-decoration: underline;
+      }
+    }
+  }
+  .annotation {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: red;
+  }
+}

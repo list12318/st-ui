@@ -1,0 +1,7 @@
+1.功能描述
+  restful  请求参数支持 query,header,body,pathParam,customVarible,sql(restful请求方式)   返回参数 headers body
+  webservice  请求模板 请求参数  返回参数 运行记录
+2.使用范围
+ 单表测试 D2A测试
+ 开发设计中心（工作流，单表，视图接口） 组件仓库(Java组件，jar包测试) 协同平台（服务集市接口测试接口管理，服务编排接口测试） API网关没有
+3.变更信息

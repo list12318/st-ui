@@ -1,0 +1,79 @@
+.simple-uploader {
+  .uploader-app {
+    width: 100%;
+  }
+  .file-panel {
+    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+    border-radius: 7px 7px 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    .file-title {
+      background: #fff;
+      display: flex;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 15px;
+      border-bottom: 1px solid #ddd;
+
+      .operate {
+        flex: 1;
+        text-align: right;
+      }
+    }
+
+    .file-list {
+      position: relative;
+      // height: 240px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      background-color: #fff;
+
+      > li {
+        background-color: #fff;
+        /deep/ .uploader-file-name {
+          width: 25%;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          text-indent: 14px;
+        }
+        /deep/.uploader-file-size {
+          width: 20%;
+          text-indent: 10px;
+        }
+        /deep/ .uploader-file-meta {
+          width: 5%;
+        }
+        /deep/ .uploader-file-status {
+          width: 40%;
+          text-indent: 20px;
+        }
+      }
+    }
+
+    &.collapse {
+      .file-title {
+        background-color: #e7ecf2;
+      }
+    }
+  }
+
+  .no-file {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+  }
+
+  /deep/ .uploader-file-icon {
+    &:before {
+      content: "" !important;
+    }
+  }
+  /deep/ .uploader-file-actions > span {
+    margin-right: 6px;
+  }
+}

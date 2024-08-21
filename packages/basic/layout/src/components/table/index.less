@@ -1,0 +1,32 @@
+.table-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  > .toolbar {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    .search {
+      width: 250px;
+    }
+  }
+  > .table {
+    height: 0;
+    width: 100%;
+    flex: auto;
+    position: relative;
+    > .table-flex {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      .el-table {
+        th {
+          background-color: #eef1f6;
+        }
+      }
+    }
+  }
+}

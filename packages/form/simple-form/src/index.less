@@ -1,0 +1,50 @@
+.stms-simple-form {
+  display: flex;
+  flex-direction: column;
+  .form-container {
+    padding: 15px 15px 0 15px;
+  }
+  .el-input-number {
+    width: 100%;
+  }
+
+  .el-select {
+    width: 100%;
+  }
+
+  .el-input-number.el-slider__input {
+    width: 130px;
+  }
+
+  .el-form-item {
+    width: 100%;
+    margin-right: 10%;
+  }
+
+  .footer {
+    padding: 0 15px;
+    width: 100%;
+    margin-right: 0;
+    text-align: right;
+  }
+}
+
+.stms-simple-form.full {
+  height: 100%;
+  width: 100%;
+
+  .wrap {
+    height: 0;
+    flex: auto;
+  }
+}
+
+.stms-simple-form.common {
+  .wrap {
+    height: auto !important;
+
+    .wrap-position {
+      position: static !important;
+    }
+  }
+}

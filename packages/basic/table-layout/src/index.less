@@ -1,0 +1,143 @@
+.stms-table-layout {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .layoutContainer {
+    height: 0;
+    flex: auto;
+    position: relative;
+    .layoutContainerFlex {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      .treeContainer {
+        height: 100%;
+        width: 250px;
+        position: relative;
+        transition: all 0.1s linear;
+        border-right: 1px solid #dcdcdc;
+        .tapContainer {
+          position: absolute;
+          top: calc(50% - 20px);
+          right: -1px;
+          height: 40px;
+          width: 18px;
+          z-index: 99;
+          overflow: hidden;
+          .tap {
+            height: 100%;
+            width: 100%;
+            color: #ddd;
+            box-shadow: 0 0 8px #ddd;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            position: relative;
+            opacity: 0.2;
+            transition: all linear 0.1s;
+            background: #666;
+          }
+          .tap:after,
+          .tap:before {
+            content: "";
+            display: block;
+            height: 3px;
+            width: 10px;
+            background: #ddd;
+            position: absolute;
+            left: 3px;
+          }
+          .tap:before {
+            top: 14px;
+            transform: rotate(-45deg);
+          }
+          .tap:after {
+            bottom: 15px;
+            transform: rotate(45deg);
+          }
+        }
+        .tapContainer:hover {
+          .tap {
+            opacity: 1;
+          }
+        }
+      }
+      .treeContainer.collapsed {
+        width: 0;
+        .stms-tree {
+          display: none;
+        }
+        .tapContainer {
+          right: -17px;
+          .tap {
+            right: 0;
+          }
+          .tap:before {
+            transform: rotate(45deg);
+          }
+          .tap:after {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+      .tableContainer {
+        width: 0;
+        flex: auto;
+        transition: all 0.1s linear;
+        display: flex;
+        flex: auto;
+        position: relative;
+        .tableContainerFlex {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+  .iov-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .iov-tool {
+      padding: 10px 20px 0;
+      .el-button {
+        i {
+          margin-left: 5px;
+        }
+      }
+      .split {
+        float: left;
+        height: 100%;
+        width: 1px;
+        background: #eee;
+        margin: 0 25px;
+      }
+      .el-input {
+        width: 250px;
+        float: right;
+      }
+      .template-tab {
+        margin-top: -10px;
+      }
+    }
+    .iov-table {
+      flex: auto;
+      position: relative;
+      padding: 10px 20px;
+      .stms-scrollbar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}
